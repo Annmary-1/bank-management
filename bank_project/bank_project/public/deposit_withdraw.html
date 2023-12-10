@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Form</title>
+    <link rel="stylesheet" href="deposit_withdraw.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transactions Form</h1>
+        <form action="/deposit_withdraw" method="post">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" required><br>
+
+            <label for="accountNumber">Account Number:</label>
+            <input type="text" id="accountNumber" name="accountNumber" required><br>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" step="1.00" required><br>
+
+            <label for="transactionType">Transaction Type:</label>
+            <select id="transactionType" name="transactionType" required>
+                <option value="Deposit">Deposit</option>
+                <option value="Withdrawal">Withdraw</option>
+            </select><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

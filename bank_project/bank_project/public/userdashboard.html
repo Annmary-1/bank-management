@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url(img7.jpg);
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: right;
+        }
+        a {
+            background-color: #ef8d1e;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            width: 45%; /* Adjust the width as needed */
+            box-sizing: border-box;
+        }
+        a:hover {
+            background-color: #2a602d;
+        }
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Make the section take the full viewport height */
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <a href="/createaccount" >Create Account</a>
+        <a href="/deleteaccount" >Delete Account</a>
+        <a href="/viewaccountdetails" >View Account Details</a>
+        <a href="/feedback" >Feedback</a>
+        <a href="/deposit_withdraw" >Withdraw Money</a>
+        <a href="/deposit_withdraw" >Deposit Money</a>
+        <a href="/logout">Logout</a>
+    </section>
+
+</body>
+</html>

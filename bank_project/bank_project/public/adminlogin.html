@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="adminlogin.css">
+    <style>
+        .user-login-link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="admin-login-container">
+    <h2>Admin Login</h2>
+    <form action="/adminlogin" method="post">
+        <label for="admin-username">Admin Username:</label>
+        <input type="text" id="admin-username" name="adminusername" required>
+
+        <label for="admin-password">Admin Password:</label>
+        <input type="password" id="admin-password" name="adminpassword" required>
+
+        <button type="submit">Admin Login</button>
+    </form>
+</div>
+
+<a href="/" class="user-login-link">User Login</a>
+
+</body>
+</html>
